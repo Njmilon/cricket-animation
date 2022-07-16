@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+header h3 {
+    text-align: center;
+    color: indianred;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 0;
+}
+
+.cricket {
+    border-top: 2px solid indianred;
+    border-bottom: 2px solid indianred;
+    background-color: rgba(222, 184, 135, 0.135);
+}
+
+.bat {
+    width: 200px;
+    transition: transform .3s ease-in .1s;
+
+}
+
+.cricket:hover .bat {
+    transform: rotate(-60deg);
+    transform-origin: top right;
+}
+
+.ball {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: brown;
+    position: relative;
+    left: 262px;
+    transition: transform 1s ease-out .4s;
+}
+
+.cricket:hover .ball {
+    transform: translate(422px, -200px);
+}
